@@ -1,0 +1,42 @@
+.outer{  
+  background-color: #3B3B3B;
+}
+.container{
+  margin: 0 5%;
+  padding: 0;
+  box-sizing: border-box;
+  height: 100vh;
+}
+
+.innerContainer1 {
+  height: 40%;
+  background-color: #626262;
+  border-radius: 15px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8%;
+}
+
+.innerContainer2{
+  height: 36%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  width: 25%;
+  height: 70%;
+  background-color: #9B9B9B;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.transaction {
+  width: 60%;
+}
+
+.expenses {}

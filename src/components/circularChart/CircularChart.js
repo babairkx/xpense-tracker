@@ -34,10 +34,8 @@ const CircularChart = ({ data }) => {
   return (
     <div
       style={{
-        backgroundColor: "#626262",
         height: "250px",
         width: "300px",
-        borderRadius: "10px",
       }}
     >
       <PieChart width={300} height={250}>

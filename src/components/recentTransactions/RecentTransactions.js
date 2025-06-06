@@ -4,53 +4,16 @@ import Style from "./RecentTransactions.module.css";
 import Previous from "../../assets/prev.svg";
 import Next from "../../assets/next.svg";
 
-const data = [
-  {
-    name: "Entertainment",
-    value: 1500,
-    specific: "Movie",
-    date: "March 31, 2024",
-  },
-  {
-    name: "Food",
-    value: 1398,
-    specific: "Samosa",
-    date: "March 31, 2024",
-  },
-  {
-    name: "Travel",
-    value: 2400,
-    specific: "France",
-    date: "March 31, 2024",
-  },
-  {
-    name: "Food",
-    value: 3500,
-    specific: "Movie",
-    date: "March 31, 2024",
-  },
-  {
-    name: "Entertainment",
-    value: 1998,
-    specific: "Samosa",
-    date: "March 31, 2024",
-  },
-  {
-    name: "Travel",
-    value: 200,
-    specific: "France",
-    date: "March 31, 2024",
-  },
-];
-
-const RecentTransactions = () => {
+const RecentTransactions = ({ data }) => {
   const [curPage, setCurPage] = useState(1);
   const [entryPerPage] = useState(3);
   const lastIndex = curPage * entryPerPage;
   const firstIndex = lastIndex - entryPerPage;
   const slicedData = data.slice(firstIndex, lastIndex);
   return (
-    <div>
+    <div
+      style={{ backgroundColor: "white", padding: "5px", borderRadius: "10px" }}
+    >
       {slicedData.map((ele) => (
         <Transactions
           name={ele.name}
