@@ -7,12 +7,12 @@ const Bars = ({ data }) => {
       style={{
         border: "1px solid white",
         borderRadius: "10px",
-        width: "430px",
-        height: "300px",
+        width: "330px",
+        height: "200px",
         backgroundColor: "white",
       }}
     >
-      <BarChart width={430} height={300} data={data} layout="vertical">
+      <BarChart width={330} height={200} data={data} layout="vertical">
         <XAxis type="number" hide={true} />
         <YAxis
           dataKey="name"
