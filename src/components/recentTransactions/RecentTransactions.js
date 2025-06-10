@@ -16,6 +16,7 @@ const RecentTransactions = ({ data }) => {
     >
       {slicedData.map((ele) => (
         <Transactions
+          key={ele.id}
           name={ele.name}
           value={ele.value}
           specific={ele.specific}

@@ -39,4 +39,9 @@
   width: 60%;
 }
 
-.expenses {}
+.modal {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0;
+}
